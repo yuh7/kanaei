@@ -1,0 +1,5 @@
+# リポジトリの中では改行を LF に揃える。Windows で取り出すときは CRLF になる。
+* text=auto
+
+*.ico binary
+*.png binary
