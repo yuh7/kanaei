@@ -14,6 +14,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    # 新しめのリポジトリは GITHUB_TOKEN が既定で読み取り専用なので、
+    # リリースを作るために書き込みを明示しておく。
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
